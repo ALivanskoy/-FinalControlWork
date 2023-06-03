@@ -1,13 +1,10 @@
-import Model.Logic.NameRandomizer;
+import Controller.Controller;
+import Model.Logic.AnimalList;
 
 public class App {
 
     public static void main(String[] args) {
-
-        for (int i = 0; i < 50; i++) {
-
-            System.out.println(NameRandomizer.getRandomName());
-
-        }
+        Controller c = new Controller(new AnimalList());
+        c.start();
     }
 }

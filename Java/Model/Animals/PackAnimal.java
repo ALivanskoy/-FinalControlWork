@@ -8,8 +8,12 @@ public abstract class PackAnimal extends Pet {
         this.loadCapacity = loadCapacity;
     }
 
-    protected void transport (){
+    public PackAnimal(String name, int age) {
+        this(name, age, 0);
+    }
+    protected void transport() {
         makeSound();
     }
+
 
 }
